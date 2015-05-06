@@ -17,9 +17,11 @@ function Select-FileDialog
 	$objForm.Title = $Title
 	$objForm.ShowHelp = $true
 	$Show = $objForm.ShowDialog()
+	if ($Show -eq "OK")
 	{
 		Return $objForm.FileName
 	}
+	else
 	{
 		Write-Error "Operation cancelled by user."
 	}
@@ -63,5 +65,4 @@ The .jpg image should be resized and scaled down BEFORE running this script. The
 The user executing the script should have the necessary privledges to update Active Directory.
 
 #>
-
 
