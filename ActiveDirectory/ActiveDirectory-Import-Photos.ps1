@@ -74,5 +74,5 @@ The Microsoft SQL Server Instance where the database resides.
 .EXAMPLE
 .\ActiveDirectory-Import-Photos -pathToPictures "C:\temp\photos\"
 
-#>s
+#>
 
